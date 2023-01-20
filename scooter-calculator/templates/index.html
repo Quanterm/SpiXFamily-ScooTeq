@@ -1,20 +1,21 @@
 <!DOCTYPE html>
 <html>
-<head>
-    <title>E-Scooter Cost Calculator</title>
-</head>
-<body>
-    <form method="post">
-        <label for="minutes">Enter the number of minutes you want to rent the e-scooter for:</label>
-        <input type="number" id="minutes" name="minutes" required>
-        <input type="submit" value="Calculate">
-    </form>
+    <head>
+        <title>E-Scooter Cost Calculator</title>
+    </head>
+
+    <body>
+        <form method="post">
+            <label for="minutes">Enter the number of minutes you want to rent the e-scooter for:</label>
+            <input type="number" id="minutes" name="minutes" required>
+            <input type="submit" value="Calculate">
+        </form>
 
 
-    <form method="post" action="/kilometer">
-        <label for="kilometer">Enter the amount of Kilometer you want to drive for:</label>
-        <input type="number" id="kilometer" name="kilometer" required>
-        <input type="submit" value="Calculate">
-    </form>
-</body>
+        <form method="post" action="/kilometer">
+            <label for="kilometer">Enter the amount of Kilometer you want to drive for:</label>
+            <input type="number" id="kilometer" name="kilometer" required>
+            <input type="submit" value="Calculate">
+        </form>
+    </body>
 </html>
