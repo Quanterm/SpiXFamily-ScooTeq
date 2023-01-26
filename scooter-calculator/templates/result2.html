@@ -1,10 +1,82 @@
 <!DOCTYPE html>
 <html>
-    <head>
-         <title>E-Scooter Cost Calculator (Kilometer)</title>
-    </head>
+<head>
+    <title>E-Scooter Cost Calculator</title>
+    <style>
+        /* Change the background color of the body */
+        body {
+            background-color: #f2f2f2;
+        }
+    
+        /* Center the container */
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+    
+        /* Style the form */
+        form {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 2px 2px 10px #ccc;
+        }
+    
+        /* Style the form labels */
+        label {
+            font-size: 18px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+    
+        /* Style the form inputs */
+        input[type="text"] {
+            padding: 12px 20px;
+            margin: 8px 0;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+    
+        /* Style the calculate button */
+        button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 14px 20px;
+            margin: 8px 0;
+            border: none;
+            cursor: pointer;
+            width: 100%;
+            border-radius: 4px;
+        }
+    
+        /* Style the result box */
+        #result {
+            margin-top: 20px;
+            padding: 20px;
+            background-color: #f9f9f9;
+            border-radius: 10px;
+        }
+    </style>
+    
+</head>
+<body>
+    <form method="post" action="minutes">
+        <label for="minutes">Enter the number of minutes you want to rent the e-scooter for:</label>
+        <input type="number" id="minutes" name="minutes" min="0" required>
+        <input type="submit" value="Calculate">
+        
+    </form>
 
-    <body>
-        <p>The cost to rent an e-scooter for {{ kilometer }} kilometer is: {{ cost }} Euro</p>
-    </body>
+
+    <form method="post" action="/kilometer">
+        <label for="kilometer">Enter the amount of kilometer you want to drive for:</label>
+        <input type="number" id="kilometer" name="kilometer" min="0" required>
+        <input type="submit" value="Calculate">
+    </form>
+    <b>The cost to rent an e-scooter for {{ kilometer }} kilometer is: {{ cost }}€</b>
+    
+</body>
 </html>
+
