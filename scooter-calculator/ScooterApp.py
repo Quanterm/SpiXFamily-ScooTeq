@@ -2,8 +2,10 @@ from flask import Flask, render_template, request
 import ScooterCost as sc
 
 ScooterApp = Flask(__name__)
-#Run the app with "flask --app ScooterApp.py run" don`t forget you need to install the flask module with "pip install flask"
-
+"""
+#Run the app with "flask --app ScooterApp.py run" 
+don`t forget you need to install the flask module with "pip install flask"
+"""
 
 @ScooterApp.route("/", methods=["GET", "POST"])
 def index():
